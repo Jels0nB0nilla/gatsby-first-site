@@ -1,11 +1,7 @@
-/**
- * Configure your Gatsby site with this file.
- *
- * See: https://www.gatsbyjs.org/docs/gatsby-config/
- */
-
 module.exports = {
-  plugin: [
-    'gatsby-plugin-sass'
-  ]
+  siteMetadata: {
+    title: `Mu first site`,
+  },
+
+  plugins: ["gatsby-plugin-sass"],
 }
