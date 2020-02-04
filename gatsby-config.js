@@ -1,7 +1,17 @@
 module.exports = {
   siteMetadata: {
-    title: `Mu first site`,
+    title: 'My Gatsby Site',
+    author: 'Jelson Bonilla'
   },
 
-  plugins: ["gatsby-plugin-sass"],
+  plugins: [
+    "gatsby-plugin-sass",
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'src',
+        path: `${__dirname}/src/`
+      }
+    }
+  ]
 }
